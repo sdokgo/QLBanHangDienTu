@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F8C2DC8-C935-4550-84E0-1CEA8899DD9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLBanHangDienTu</RootNamespace>
+    <AssemblyName>QLBanHangDienTu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frChatLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frChatLieu.Designer.cs">
+      <DependentUpon>frChatLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHoaDonBan.Designer.cs">
+      <DependentUpon>frHoaDonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frKhachHang.Designer.cs">
+      <DependentUpon>frKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frNhanVien.Designer.cs">
+      <DependentUpon>frNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHoaDonNhap.Designer.cs">
+      <DependentUpon>frHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMain.Designer.cs">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDMHanghoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDMHanghoa.Designer.cs">
+      <DependentUpon>frDMHanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frNhaCungCap.Designer.cs">
+      <DependentUpon>frNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frReport1.Designer.cs">
+      <DependentUpon>frReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frReport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frReport2.Designer.cs">
+      <DependentUpon>frReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frReport3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frReport3.Designer.cs">
+      <DependentUpon>frReport3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frReport4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frReport4.Designer.cs">
+      <DependentUpon>frReport4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTimKiemHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTimKiemHang.Designer.cs">
+      <DependentUpon>frTimKiemHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTimKiemHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTimKiemHDN.Designer.cs">
+      <DependentUpon>frTimKiemHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBanHangDienTu_bantestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangDienTu_bantestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLBanHangDienTu_bantestDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangDienTu_bantestDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLBanHangDienTu_bantestDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangDienTu_bantestDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLBanHangDienTu_bantestDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBanHangDienTu_bantestDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frChatLieu.resx">
+      <DependentUpon>frChatLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDMHanghoa.resx">
+      <DependentUpon>frDMHanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHoaDonBan.resx">
+      <DependentUpon>frHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHoaDonNhap.resx">
+      <DependentUpon>frHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frKhachHang.resx">
+      <DependentUpon>frKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frMain.resx">
+      <DependentUpon>frMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frNhaCungCap.resx">
+      <DependentUpon>frNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frNhanVien.resx">
+      <DependentUpon>frNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frReport1.resx">
+      <DependentUpon>frReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frReport2.resx">
+      <DependentUpon>frReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frReport3.resx">
+      <DependentUpon>frReport3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frReport4.resx">
+      <DependentUpon>frReport4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTimKiemHang.resx">
+      <DependentUpon>frTimKiemHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTimKiemHDN.resx">
+      <DependentUpon>frTimKiemHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Content Include="Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report2.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report3.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report4.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLBanHangDienTu_bantestDataSet.xsc">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBanHangDienTu_bantestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet.xss">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet1.xsc">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBanHangDienTu_bantestDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet1.xss">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet2.xsc">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBanHangDienTu_bantestDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet2.xss">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet3.xsc">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBanHangDienTu_bantestDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBanHangDienTu_bantestDataSet3.xss">
+      <DependentUpon>QLBanHangDienTu_bantestDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{703fd309-9de1-4a68-af6b-1926d5ea24b1}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c0006545-4ad8-4a87-8b58-c9fe54e2f0b8}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Handling\Handling.csproj">
+      <Project>{1e846f26-fa9f-4ad8-821f-59d1881501be}</Project>
+      <Name>Handling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Object\Object.csproj">
+      <Project>{36f797ad-2013-4b1e-936d-1fc8cff23cbf}</Project>
+      <Name>Object</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
